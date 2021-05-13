@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  executejavascript:
+    image: ${DOCKER_REGISTRY-}executejavascript
+    build:
+      context: .
+      dockerfile: ExecuteJavaScript/Dockerfile
